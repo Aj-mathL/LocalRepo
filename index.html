@@ -1,12 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abhijit
+
+
+    </title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p>This is a paragraph</p>
-    <h1>This is under the trial of abhi's git hub pages </h1>
+
+
+    <div id="header">
+        <div class="nav-container">
+            <nav>
+                <img src="image/logo.png" alt="" class="logoNav">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+
+                    <!-- <li><a href="#">Blog</a></li> -->
+                    <li><a href="#contact">Contact me</a></li>
+                    <svg class="fas" onclick="closemenu()" xmlns="http://www.w3.org/2000/svg" height="32"
+                        viewBox="0 -960 960 960" width="32">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </ul>
+                <svg class="fas" onclick="openmenu()" xmlns="http://www.w3.org/2000/svg" height="32"
+                    viewBox="0 -960 960 960" width="32">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Abhijit</span> </h1>
+                <p><span id="element"></span></p>
+                <h1>From India</h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- -------------about----------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/abhi.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore inventore laborum laboriosam non
+                        ullam fugit obcaecati! Ratione recusandae omnis nam vitae! Soluta, corrupti! Enim repellendus
+                        aut veritatis atque deserunt ex quidem iste suscipit itaque harum. Magni, deserunt magnam. Rerum
+                        quidem exercitationem dolorum dolores totam atque laudantium libero? Consequuntur, fugit magni.
+                    </p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/Ux</span><br>Designer Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Designer Web/App interfaces</li>
+                            <li><span>App Development</span><br>Designer Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br>Designer Web/App interfaces</li>
+                            <li><span>Fresher</span><br>Python Developer</li>
+                            <li><span>Fresher</span><br>CPP Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-24</span><br>Masters in Mathematics</li>
+                            <li><span>2019-22</span><br>Bachelor in Mathematics</li>
+                            <li><span>2024</span><br>Web Development and Data Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -------------------services---------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <div class="sub-title">My Services</div>
+            <div class="services-list">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#e8eaed">
+                        <path
+                            d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
+                    </svg>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quo eos iure nobis obcaecati
+                        iusto officia aut repudiandae, porro ut?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#e8eaed">
+                        <path
+                            d="M680-40v-160H280q-33 0-56.5-23.5T200-280v-400H40v-80h160v-160h80v640h640v80H760v160h-80Zm0-320v-320H360v-80h320q33 0 56.5 23.5T760-680v320h-80Z" />
+                    </svg>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quo eos iure nobis obcaecati
+                        iusto officia aut repudiandae, porro ut?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#e8eaed">
+                        <path
+                            d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm140-40-56-56 103-104-104-104 57-56 160 160-160 160Zm180 0v-80h240v80H480Z" />
+                    </svg>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quo eos iure nobis obcaecati
+                        iusto officia aut repudiandae, porro ut?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------------Portfolio-------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/portfolioworl.jpeg" alt="work1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Tha app connects you to the talented people around the world. Download it from play store.
+                        </p>
+                        <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                width="40px" fill="#e8eaed">
+                                <path
+                                    d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/portfolioworl.jpeg" alt="work2">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Tha app connects you to the talented people around the world. Download it from play store.
+                        </p>
+                        <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                width="40px" fill="#e8eaed">
+                                <path
+                                    d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/portfolioworl.jpeg" alt="work3">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Tha app connects you to the talented people around the world. Download it from play store.
+                        </p>
+                        <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                width="40px" fill="#e8eaed">
+                                <path
+                                    d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- ---------------------contact------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p class="f-em"><img class="logo" src="image/send_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
+                            alt="">mr.abhijitmajumder66@gmial.com</p>
+                    <p class="f-call"><img class="logo" src="image/call_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">8597960165
+                    </p>
+                    <div class="socaial-icons">
+                        <a href=""><img class="logo" src="image/facebook.png" alt=""></a>
+                        <a href=""><img class="logo" src="image/insta.webp" alt=""></a>
+                        <a href=""><img class="logo" src="image/telegram.png" alt=""></a>
+                        <a href=""><img class="logo" src="image/twitter101.avif" alt=""></a>
+                    </div>
+                    <a href="image/abhi.jpeg" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name">
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright <img class="copyr" src="image/copyright_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                2024-25, Inc. Privacy Policy Terms</p>
+        </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyVv9xqNvhxGMntTkMEdypMLfytpTjTZPN_bJiDI8pdNsc9eDqEoHfdXX7zIAZmAIX36w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Message sent successfully'
+                    setTimeout(function () {
+                        msg.innerHTML = ''
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error! quantam TADA', error.message))
+        })
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Devloper!', 'Mathematician!', 'Coder!', 'Gamer!'],
+            typeSpeed: 50,
+        });
+
+
+    </script>
+
+
+    <script src="app.js"></script>
 </body>
+
 </html>

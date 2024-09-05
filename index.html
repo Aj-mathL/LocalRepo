@@ -41,6 +41,7 @@
                 <h1>Hi, I'm <span>Abhijit</span> </h1>
                 <p>A passionate <span id="element"></span></p>
                 <h1>From India</h1>
+                <a href="#contact" class="btn btn2">Contact me</a>
 
             </div>
         </div>
@@ -107,7 +108,7 @@
                             d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
                     </svg>
                     <h2>Forn-end Development</h2>
-                    <p><span id="element2"></span></p>
+                    <p>As a skilled front-end developer, I offer high-quality services to bring your website or webapplication to life. With expertise in Html, Css and JavaScript, I create responsive, user-friendly and visually appearing good interfaces that enhance user experience</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
@@ -117,7 +118,7 @@
                             d="M680-40v-160H280q-33 0-56.5-23.5T200-280v-400H40v-80h160v-160h80v640h640v80H760v160h-80Zm0-320v-320H360v-80h320q33 0 56.5 23.5T760-680v320h-80Z" />
                     </svg>
                     <h2>Python Developer</h2>
-                    <p><span id="element3"></span></p>
+                    <p>As a Python Developer, I offer services to help you bulild and automate applications, tools and scripts using the Python Programming language. With a solid foundation in basic Python concepts, I can assist you.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
@@ -127,7 +128,7 @@
                             d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm140-40-56-56 103-104-104-104 57-56 160 160-160 160Zm180 0v-80h240v80H480Z" />
                     </svg>
                     <h2>C/C++ Developer</h2>
-                    <p><span id="element4"></span></p>
+                    <p>As a C/C++ developer, I offer services to build and optimize applications, systems and tools using the C and C++ programming languages. With a solid foundation in basic C/C++ concepts, I can assist you. </p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
@@ -143,10 +144,10 @@
                 <div class="work">
                     <img src="image/portfolioworl.jpeg" alt="work1">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Tha app connects you to the talented people around the world. Download it from play store.
+                        <h3>Ecomerce Web Page </h3>
+                        <p>Here I make a simple Ecomerce website where you can order some product and give rating. That's all. 
                         </p>
-                        <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                        <a href="#game"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
                                 width="40px" fill="#e8eaed">
                                 <path
                                     d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
@@ -201,7 +202,7 @@
                         <a href=""><img class="logo" src="image/telegram.png" alt=""></a>
                         <a href=""><img class="logo" src="image/twitter101.avif" alt=""></a>
                     </div>
-                    <a href="image/abhi.jpeg" download class="btn btn2">Download CV</a>
+                    <a href="image/Ressume.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -220,18 +221,30 @@
                 2024-25, Inc. Privacy Policy Terms</p>
         </div>
     </div>
+
+
+
+
+
+
+    <!-- ----------------------------------script----------------------------------- -->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyVv9xqNvhxGMntTkMEdypMLfytpTjTZPN_bJiDI8pdNsc9eDqEoHfdXX7zIAZmAIX36w/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg");
-
+        const contactBtn = document.querySelector(".btn3"); 
         form.addEventListener('submit', e => {
+            setTimeout(function() {
+                contactBtn.innerText = "Msg Sending..."; 
+            }, 200); 
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
                     msg.innerHTML = 'Message sent successfully'
                     setTimeout(function () {
                         msg.innerHTML = ''
+                        contactBtn.innerHTML = 'Submit'; 
+
                     }, 5000)
                     form.reset();
                 })
@@ -240,41 +253,7 @@
     </script>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Coder!', 'Mathematician!', 'Fontend Developer', 'Python Developer!', 'C/C++ Developer'],
-            typeSpeed: 50,
-        });
-
-
-    </script>
-
-<script>
-    var typed = new Typed('#element2', {
-        strings: ['As a skilled front-end developer, I offer high-quality services to bring your website or webapplication to life. With expertise in Html, Css and JavaScript, I create responsive, user-friendly and visually appearing good interfaces that enhance user experience'],
-        typeSpeed: 25,
-    });
-
-
-</script>
-<script>
-    var typed = new Typed('#element3', {
-        strings: ['As a Python Developer, I offer services to help you bulild and automate applications, tools and scripts using the Python Programming language. With a solid foundation in basic Python concepts, I can assist you.'],
-        typeSpeed: 25,
-    });
-
-
-</script>
-<script>
-    var typed = new Typed('#element4', {
-        strings: ['As a C/C++ developer, I offer services to build and optimize applications, systems and tools using the C and C++ programming languages. With a solid foundation in basic C/C++ concepts, I can assist you. '],
-        typeSpeed: 25,
-    });
-
-
-</script>
-
-
+    
     <script src="app.js"></script>
 </body>
 

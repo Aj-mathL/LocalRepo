@@ -443,15 +443,7 @@ form btn2 {
         padding-right: 20px;
     } */
 
-    nav {
-        position: sticky;
-        background-color: rgb(1, 1, 2);
-
-        padding: 20px;
-
-
-
-    }
+   
 
     nav svg {
         background-color: #ffff;
